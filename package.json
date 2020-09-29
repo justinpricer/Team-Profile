@@ -1,0 +1,27 @@
+{
+    "name": "Team-Profile",
+    "version": "1.0.0",
+    "description": "Unit 10 homework",
+    "main": "app.js",
+    "directories": {
+      "lib": "lib",
+      "test": "test"
+    },
+    "scripts": {
+      "test": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/justinpricer/Team-Profile.git"
+    },
+    "author": "",
+   ,
+    "bugs": {
+      "url": "https://github.com/justinpricer/Team-Profile/issues"
+    },
+    "homepage": "https://github.com/justinpricer/Team-Profile#readme",
+    "dependencies": {
+      "inquirer": "^7.0.0",
+      "jest": "^24.9.0"
+    }
+  }
