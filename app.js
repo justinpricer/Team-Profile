@@ -79,13 +79,7 @@ function addMember() {
     });
 }
 
-// function renderHtml(memberArray) {
-//     startHtml();
-//     for (const member of memberArray) {
-//         addHtml(member);
-//     }
-//     finishHtml();
-// }
+
 
 function startHtml() {
     const html = `<!DOCTYPE html>
@@ -103,7 +97,7 @@ function startHtml() {
         </nav>
         <div class="container">
             <div class="row">`;
-    fs.writeFile("templates/team.html", html, function(err) {
+    fs.writeFile("./templates/team.html", html, function(err) {
         if (err) {
             console.log(err);
         }
@@ -156,7 +150,7 @@ function addHtml(member) {
         </div>`
         }
         console.log("adding team member");
-        fs.appendFile("templates/team.html", data, function (err) {
+        fs.appendFile("./templates/team.html", data, function (err) {
             if (err) {
                 return reject(err);
             };
@@ -178,7 +172,7 @@ function finishHtml() {
 </body>
 </html>`;
 
-    fs.appendFile("templates/team.html", html, function (err) {
+    fs.appendFile("./templates/team.html", html, function (err) {
         if (err) {
             console.log(err);
         };
@@ -186,10 +180,5 @@ function finishHtml() {
     console.log("end");
 }
 
-// addMember();
-// startHtml();
-// addHtml("hi")
-// .then(function() {
-// finishHtml();
-// });
+
 initApp();
